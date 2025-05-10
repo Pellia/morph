@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply bg-linear-to-b from-blue-50 via-teal-50 to-lime-50 min-h-screen;
+    }
+}
