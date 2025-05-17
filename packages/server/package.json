@@ -1,19 +1,37 @@
 {
-    "name": "server",
-    "version": "1.0.0",
-    "description": "",
+    "name": "morph-server",
+    "private": true,
+    "version": "0.0.1",
+    "description": "Backend API-Server for Morph",
+    "author": "Rupinder Singh",
+    "homepage": "https://github.com/Pellia/morph",
     "main": "index.js",
     "scripts": {
         "dev": "nodemon -r dotenv/config index.js",
-        "start": "node index.js"
+        "start": "node index.js",
+        "push": "npm version patch && git push",
+        "push-minor": "npm version minor && git push",
+        "push-major": "npm version major && git push"
     },
-    "keywords": [],
-    "author": "",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Pellia/morph.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Pellia/morph/issues"
+    },
     "license": "ISC",
     "type": "module",
     "dependencies": {
+        "bcrypt": "^6.0.0",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
         "express": "^5.1.0",
-        "nodemon": "^3.1.10"
+        "joi": "^17.13.3",
+        "jsonwebtoken": "^9.0.2",
+        "nodemon": "^3.1.10",
+        "pg": "^8.16.0",
+        "sequelize": "^6.37.7"
     },
     "devDependencies": {
         "dotenv": "^16.5.0"
