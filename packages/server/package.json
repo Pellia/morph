@@ -1,17 +1,13 @@
 {
     "name": "morph-server",
     "private": true,
-    "version": "0.0.1",
     "description": "Backend API-Server for Morph",
     "author": "Rupinder Singh",
     "homepage": "https://github.com/Pellia/morph",
     "main": "index.js",
     "scripts": {
         "dev": "nodemon -r dotenv/config index.js",
-        "start": "node index.js",
-        "push": "npm version patch && git push",
-        "push-minor": "npm version minor && git push",
-        "push-major": "npm version major && git push"
+        "start": "node index.js"
     },
     "repository": {
         "type": "git",
